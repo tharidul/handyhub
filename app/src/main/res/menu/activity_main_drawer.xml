@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/work"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_myjobs"
+            android:icon="@mipmap/briefcase"
+            android:title="@string/menu_MyJobs" />
+
+        <item
+            android:id="@+id/nav_myhirings"
+            android:icon="@mipmap/hired"
+            android:title="@string/menu_MyHiring" />
+
+
+    </group>
+</menu>

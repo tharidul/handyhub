@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/time_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="40dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/hint_settime"
+            android:imeOptions="flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="text|textCapWords|textNoSuggestions"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="#757575"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/date_editText"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <EditText
+            android:id="@+id/date_editText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="40dp"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:hint="@string/hint_setdate"
+            android:imeOptions="flagNoExtractUi"
+            android:importantForAutofill="no"
+            android:inputType="text|textCapWords|textNoSuggestions"
+            android:paddingStart="20dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/dark_blue"
+            android:textColorHint="#757575"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.285"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dateTimeLabel"
+            android:focusable="false"
+            android:clickable="true"/>
+
+        <TextView
+            android:id="@+id/dateTimeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Select Date and Time"
+            android:textColor="#757575"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.086"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mapView" />
+
+
+
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Location"
+            android:textColor="#757575"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="0dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/locationLabel" />
+
+        <!-- Date and Time Section -->
+
+        <!-- Book Button -->
+
+        <Button
+            android:id="@+id/searchPlace"
+            android:layout_width="161dp"
+            android:layout_height="58dp"
+            android:layout_margin="8dp"
+            android:layout_marginStart="16dp"
+            android:backgroundTint="#2196F3"
+            android:padding="12dp"
+            android:text="Find Location"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            app:icon="@mipmap/hire_ico"
+            app:iconSize="24dp"
+            app:layout_constraintStart_toStartOf="@id/mapView"
+            app:layout_constraintTop_toTopOf="@id/mapView" />
+
+        <Button
+            android:id="@+id/bookButton"
+            android:layout_width="292dp"
+            android:layout_height="69dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="60dp"
+            android:backgroundTint="@color/dark_orange"
+            android:padding="16dp"
+            android:text="Book Worker"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.459"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/time_editText"
+            app:layout_constraintVertical_bias="0.737" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

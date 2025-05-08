@@ -1,9 +1,28 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+    <!-- Base application theme -->
     <style name="Base.Theme.HandyHub" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <!-- Primary Colors -->
+        <item name="colorPrimary">@color/dark_orange</item>  <!-- Change to your preferred color -->
+        <item name="colorPrimaryVariant">@color/light_orange</item> <!-- Darker shade of primary -->
+        <item name="android:statusBarColor">@color/dark_orange</item> <!-- Status bar color -->
+        <item name="android:navigationBarColor">#E65100</item> <!-- Bottom navigation bar color -->
+
+        <!-- Other UI Customizations -->
+        <item name="android:windowBackground">#FFFFFF</item> <!-- Background color -->
     </style>
 
+    <!-- Main Theme -->
     <style name="Theme.HandyHub" parent="Base.Theme.HandyHub" />
+
+    <!-- No Action Bar Theme -->
+    <style name="Theme.HandyHub.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- App Bar Overlay -->
+    <style name="Theme.HandyHub.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Popup Overlay -->
+    <style name="Theme.HandyHub.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -2,4 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="dark_blue">#001369</color>
+    <color name="light_blue">#004aad</color>
+    <color name="dark_orange">#EB9810</color>
+    <color name="light_orange">#ffbd59</color>
+    <color name="place_autocomplete_prediction_secondary_text">#ffbd59</color>
+
+
 </resources>

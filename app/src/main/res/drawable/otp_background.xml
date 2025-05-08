@@ -1,0 +1,6 @@
+<!-- res/drawable/otp_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F6CB8C"/> <!-- Light Gray Background -->
+    <corners android:radius="8dp"/> <!-- Rounded Corners -->
+    <stroke android:color="@color/dark_orange" android:width="1dp"/> <!-- Border -->
+</shape>

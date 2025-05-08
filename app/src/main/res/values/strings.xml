@@ -1,3 +1,80 @@
 <resources>
     <string name="app_name">HandyHub</string>
+    <string name="btn_getstarted">Get Started</string>
+
+    <string name="hint_firstname">First name</string>
+    <string name="hint_lastname">Last name</string>
+    <string name="hint_mobile">Mobile number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_search">Search…</string>
+    <string name="hint_savechanges">Save Changes</string>
+
+
+    <string name="btn_CreateAccount">Create Account</string>
+    <string name="btn_gotoLogin">Have an account? Sign In</string>
+    <string name="text_creteAccount">Join HandyHub Today !</string>
+
+    <string name="btn_SignIn">Sign In</string>
+    <string name="btn_gotoCreateAccount">Not a member yet? Sign up now!</string>
+    <string name="text_signin">Sign In to HandyHub !</string>
+
+
+    <string name="text_mobileVerification">Verify you mobile number</string>
+    <string name="asterisk">*</string>
+    <string name="otp_des">We’ve sent you a One-Time Password (OTP) to your mobile number.</string>
+    <string name="btn_submit">Submit</string>
+
+
+    <string name="home">Home Sweet Home</string>
+    <string name="btn_hire">Need an Expert?</string>
+    <string name="btn_work">Let’s Get to Work</string>
+
+
+    <string name="title_activity_home2">Home2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">HandyHub</string>
+    <string name="nav_header_subtitle">handyhub.lk</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_MyJobs">My Jobs</string>">
+    <string name="menu_MyHiring">My Hiring</string>">
+
+    <string name="work_Work_Title">Work Title</string>">
+    <string name="work_nic">NIC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>">
+
+    <string name="hint_searchLocation">Set your Location</string>
+    <string name="google_maps_key">AIzaSyAFSanmtSEooZa4B5EVcsx3w4R-epb-G5Q</string>
+
+    <string name="location_search_button">Find</string>
+    <string name="hint_setdate">Set Date</string>">
+    <string name="hint_settime">Set Time</string>">
+
+    <string name="bookBtn">Worker Book</string>
+    <string name="location_text">Select Your Location</string>
+
+
+    <string name="location_cus">Customer Location :</string>
+    <string name="brn_jobAccepted">Accept Job</string>
+    <string name="brn_cancelJob">Cancel Job</string>
+    <string name="brn_completeJob">Complete Job</string>
+    <string name="brn_setCharge">Set Charge</string>
+
+
+    <string name="text_charge">Charge (Rs.):</string>
+    <string name="charge_data">00.00</string>
+    <string name="pay_and_confirm">Pay Now</string>
+
+
+
+
+    <string name="editTExt_setprice">Set Price (LKR)</string>
+    <string name="map">Map</string>
+
+
 </resources>

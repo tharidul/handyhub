@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.CreateWorkProfileFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/workerProfileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/nic_number"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/work_nic"
+                android:inputType="text"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/workerPricing"
+                android:drawableRight="@mipmap/check_mark"/>
+
+
+            <EditText
+                android:id="@+id/work_titile"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/work_Work_Title"
+                android:inputType="text"
+                android:padding="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <Spinner
+                android:id="@+id/serviceCategory"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/work_titile" />
+
+            <EditText
+                android:id="@+id/workerExperience"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Years of Experience"
+                android:inputType="number"
+                android:padding="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/serviceCategory"
+                app:layout_constraintEnd_toStartOf="@id/workerPricing" />
+
+            <EditText
+                android:id="@+id/workerPricing"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/edittext_background"
+                android:hint="Hourly Rate (LKR)"
+                android:inputType="numberDecimal"
+                android:padding="12dp"
+                app:layout_constraintTop_toBottomOf="@id/serviceCategory"
+                app:layout_constraintStart_toEndOf="@id/workerExperience"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/nic_front"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/rectangle_border"
+                android:padding="18dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/nicb"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nic_number" />
+
+            <ImageView
+                android:id="@+id/nic_back"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rectangle_border"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/nicf"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nic_front" />
+
+            <Button
+                android:id="@+id/btnSaveWorkerProfile"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="120dp"
+                android:backgroundTint="@color/dark_orange"
+                android:text="Save Profile"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/nic_back" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="384dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                android:src="@mipmap/verified"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
